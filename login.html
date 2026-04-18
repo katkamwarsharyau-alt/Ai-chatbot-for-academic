@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - AI Academic Chatbot</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* overlay */
+.overlay {
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔥 NEW CARD STYLE */
+.box {
+    width: 360px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+
+    border: 2px solid rgba(0,255,255,0.3);
+
+    /* animation */
+    animation: zoomIn 0.8s ease;
+}
+
+/* animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* glowing title */
+h2 {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* focus glow */
+input:focus {
+    box-shadow: 0 0 10px #00eaff;
+}
+
+/* neon button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #00eaff;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
+    color: #00eaff;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+/* links */
+a {
+    color: #ffd700;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+<div class="box">
+
+<h2>🎓 AI Login</h2>
+
+<form method="POST" action="/login">
+<input name="username" placeholder="Username" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+
+<p>Don't have account? <a href="/register">Register</a></p>
+
+</div>
+</div>
+
+</body>
+</html>

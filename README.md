@@ -22,7 +22,8 @@ This project is an AI chatbot that helps students with academic and administrati
    python app.py
 
 ## 📷 Screenshots
-(Add screenshots here)
+![Login Page](Screenshot 2026-04-18 105249.png)
+![Chatbot Page](Screenshot 2026-04-18 105336.png)
 
 ## 👨‍💻 Author
-Your Name
+sensor squad
